@@ -13,9 +13,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 
-const Hi = ({ name }) => (
-  <div>Hello {name}!</div>
-)
 
-ReactDOM.render(<Hi name="Martin"/>, document.querySelector('#root'));
+// ReactDOM.render(<Hi name="Martin"/>, document.querySelector('#root'));
+// ReactDOM.render(<MediaCard title="foo" body="foo2" imageUrl="foo3" />, document.querySelector('#root'));
+// ReactDOM.render(<MediaCard title="foo" body="foo2" imageUrl=""/>, document.querySelector('#root'));
+ReactDOM.render(<App />, document.getElementById('root'));
