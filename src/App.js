@@ -14,6 +14,12 @@ const MediaCard = ({title,body,imageUrl}) => (
   </div>
 )
 
+function Room() {
+  return (
+    <div className="room">the room is lit</div>
+  );
+}
+
 function App() {
   return (
     // <div className="App">
@@ -35,6 +41,7 @@ function App() {
     <div>
     <MediaCard title="foo" body="foo2" imageUrl=""/>
     <Hi />
+    <Room />
     </div>
   );
 }
