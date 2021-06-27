@@ -1,5 +1,5 @@
 import React from 'react';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 
 const Hi = ({ name }) => (
@@ -10,7 +10,7 @@ const MediaCard = ({title,body,imageUrl}) => (
   <div>
   <h2>{title}</h2>
   <p>{body}</p>
-  <img src={imageUrl} alt="foo"/>
+  <img style={{height:'30px'}} src={imageUrl} alt={logo}/>
   </div>
 )
 
@@ -46,7 +46,7 @@ function App() {
     //   </header>
     // </div>
     <div>
-    <MediaCard title="foo" body="foo2" imageUrl=""/>
+    <MediaCard title="foo" body="foo2" imageUrl={logo}/>
     <Hi />
     <Room />
     </div>
