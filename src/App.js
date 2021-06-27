@@ -18,7 +18,7 @@ function Room() {
   const [isLit, setLit] = React.useState(true);
   return (
     <div className="room">
-      this room is {isLit ? 'lit' : 'dark'}
+      this FOO room is {isLit ? 'lit' : 'dark'}
       <br />
       <button onClick={() => setLit(!isLit)}>
         flip
